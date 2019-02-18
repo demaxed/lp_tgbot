@@ -1,5 +1,6 @@
-import logging
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+import logging
+import settings
 
 
 PROXY = {
@@ -29,8 +30,8 @@ def talk_to_me(bot, update):
 
 def main():
     mybot = Updater(
-        "758718329:AAHVI_T8WxTGuj46TsFfK9d0TlQor-HsYiA",
-        request_kwargs=PROXY
+        settings.API_KEY,
+        request_kwargs=settings.PROXY
     )
 
     logging.info('Бот запускается')
