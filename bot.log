@@ -5,3 +5,244 @@ telegram.ext.updater - INFO - Received signal 2 (SIGINT), stopping...
 telegram.ext.updater - WARNING - Exiting immediately!
 2019-02-18 17:54:45,110 - INFO - Бот запускается
 2019-02-18 17:55:05,974 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 18:39:51,740 - INFO - Бот запускается
+2019-03-07 18:39:58,094 - INFO - User: maxim01010,
+Chat id: 270016835,
+Message: 1
+2019-03-07 18:40:06,843 - INFO - User: maxim01010,
+Chat id: 270016835,
+Message: Good
+2019-03-07 18:40:48,087 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 18:40:54,112 - INFO - Бот запускается
+2019-03-07 18:40:57,894 - INFO - User: maxim01010,
+Chat id: 270016835,
+Message: YEAH!
+2019-03-07 18:45:06,355 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 18:45:11,352 - INFO - Бот запускается
+2019-03-07 18:45:46,215 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 18:50:25,783 - INFO - Бот запускается
+2019-03-07 18:50:30,977 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+TypeError: greet_user() got an unexpected keyword argument 'user_data'
+2019-03-07 18:50:37,980 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+TypeError: greet_user() got an unexpected keyword argument 'user_data'
+2019-03-07 18:50:55,415 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 18:51:02,588 - INFO - Бот запускается
+2019-03-07 18:51:11,959 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 17, in greet_user
+    smile = emojize(choise(settings.USER_EMOJI), use_aliases=True)
+NameError: name 'choise' is not defined
+2019-03-07 18:51:17,475 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+TypeError: talk_to_me() got an unexpected keyword argument 'user_data'
+2019-03-07 18:51:21,654 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+TypeError: talk_to_me() got an unexpected keyword argument 'user_data'
+2019-03-07 18:51:26,480 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+TypeError: talk_to_me() got an unexpected keyword argument 'user_data'
+2019-03-07 18:51:28,886 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 17, in greet_user
+    smile = emojize(choise(settings.USER_EMOJI), use_aliases=True)
+NameError: name 'choise' is not defined
+2019-03-07 18:51:45,685 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+TypeError: send_cat_picture() got an unexpected keyword argument 'user_data'
+2019-03-07 18:51:54,258 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 18:52:00,256 - INFO - Бот запускается
+2019-03-07 18:52:15,721 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+TypeError: talk_to_me() got an unexpected keyword argument 'user_data'
+2019-03-07 18:52:20,102 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+TypeError: talk_to_me() got an unexpected keyword argument 'user_data'
+2019-03-07 18:52:23,084 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 17, in greet_user
+    smile = emojize(choise(settings.USER_EMOJI), use_aliases=True)
+NameError: name 'choise' is not defined
+2019-03-07 18:53:19,224 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 18:53:25,449 - INFO - Бот запускается
+2019-03-07 18:53:40,099 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 17, in greet_user
+    smile = emojize(choise(settings.USER_EMOJI), use_aliases=True)
+NameError: name 'choise' is not defined
+2019-03-07 18:53:42,647 - INFO - User: maxim01010,
+Chat id: 270016835,
+Message: fdsfsdf
+2019-03-07 18:53:50,596 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 17, in greet_user
+    smile = emojize(choise(settings.USER_EMOJI), use_aliases=True)
+NameError: name 'choise' is not defined
+2019-03-07 18:54:28,417 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 18:54:31,527 - INFO - Бот запускается
+2019-03-07 18:54:37,222 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 17, in greet_user
+    smile = emojize(choise(settings.USER_EMOJI), use_aliases=True)
+NameError: name 'choise' is not defined
+2019-03-07 18:54:47,173 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 17, in greet_user
+    smile = emojize(choise(settings.USER_EMOJI), use_aliases=True)
+NameError: name 'choise' is not defined
+2019-03-07 18:54:50,017 - INFO - User: maxim01010,
+Chat id: 270016835,
+Message: dsfsdf
+2019-03-07 18:55:41,582 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 18:55:47,429 - INFO - Бот запускается
+2019-03-07 18:55:51,722 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 17, in greet_user
+    smile = emojize(choise(settings.USER_EMOJI), use_aliases=True)
+NameError: name 'choise' is not defined
+2019-03-07 18:56:00,857 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 17, in greet_user
+    smile = emojize(choise(settings.USER_EMOJI), use_aliases=True)
+NameError: name 'choise' is not defined
+2019-03-07 18:56:03,601 - INFO - User: maxim01010,
+Chat id: 270016835,
+Message: dsd
+2019-03-07 18:57:56,344 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 18:58:42,775 - INFO - Бот запускается
+2019-03-07 18:58:47,173 - INFO - User: maxim01010,
+Chat id: 270016835,
+Message: f
+2019-03-07 18:58:50,484 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 17, in greet_user
+    smile = emojize(choise(settings.USER_EMOJI), use_aliases=True)
+NameError: name 'choise' is not defined
+2019-03-07 18:58:54,004 - INFO - User: maxim01010,
+Chat id: 270016835,
+Message: start
+2019-03-07 18:59:01,256 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 17, in greet_user
+    smile = emojize(choise(settings.USER_EMOJI), use_aliases=True)
+NameError: name 'choise' is not defined
+2019-03-07 19:00:50,530 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 17, in greet_user
+    smile = emojize(choise(settings.USER_EMOJI), use_aliases=True)
+NameError: name 'choise' is not defined
+2019-03-07 19:01:38,155 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/commandhandler.py", line 173, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "bot.py", line 17, in greet_user
+    smile = emojize(choice(settings.USER_EMOJI), use_aliases=True)
+NameError: name 'choise' is not defined
+2019-03-07 19:01:43,616 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 19:01:51,139 - INFO - Бот запускается
+2019-03-07 19:02:14,106 - INFO - User: maxim01010,
+Chat id: 270016835,
+Message: hi
+2019-03-07 19:20:43,473 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 19:20:47,948 - INFO - Бот запускается
+2019-03-07 19:20:56,515 - INFO - User: maxim01010,
+Chat id: 270016835,
+Message: gf
+2019-03-07 19:21:34,345 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 19:23:38,833 - INFO - Бот запускается
+2019-03-07 19:23:56,717 - INFO - Бот запускается
+2019-03-07 19:24:36,872 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 19:24:40,703 - INFO - Бот запускается
+2019-03-07 19:26:35,989 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 19:26:43,378 - INFO - Бот запускается
+2019-03-07 19:28:04,784 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 19:28:11,371 - INFO - Бот запускается
+2019-03-07 19:29:31,748 - INFO - Бот запускается
+2019-03-07 19:30:32,754 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 19:30:35,929 - INFO - Бот запускается
+2019-03-07 19:42:02,866 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-07 19:42:09,652 - INFO - Бот запускается
+2019-03-07 19:43:50,889 - INFO - Received signal 2 (SIGINT), stopping...
