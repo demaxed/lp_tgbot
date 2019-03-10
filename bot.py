@@ -1,10 +1,13 @@
 import logging
 import settings
 from telegram.ext import Updater, CommandHandler, \
-                    MessageHandler, Filters, RegexHandler
+                    MessageHandler, Filters, RegexHandler, \
+                    ConversationHandler
 
 from handlers import greet_user, talk_to_me, send_cat_picture, get_contact, \
-                    get_location, check_user_photo
+                    get_location, check_user_photo, anketa_get_name, \
+                    anketa_rating, anketa_comment, anketa_skip_comment, \
+                    anketa_start, dontknow
 
 
 logging.basicConfig(
@@ -23,7 +26,49 @@ def main():
     logging.info('Бот запускается')
 
     dp = mybot.dispatcher
+
+    anketa = ConversationHandler(
+                    entry_points=[
+                        RegexHandler('^(Fill in the form)$',
+                        anketa_start,
+                        pass_user_data=True)
+                    ],
+                    states={
+                        "name": [
+                            MessageHandler(
+                            Filters.text,
+                            anketa_get_name,
+                            pass_user_data=True
+                        )],
+                        "rating": [
+                            RegexHandler(
+                            '^(1|2|3|4|5)$',
+                            anketa_rating,
+                            pass_user_data=True
+                        )],
+                        "comment": [
+                            MessageHandler(
+                            Filters.text,
+                            anketa_comment,
+                            pass_user_data=True),
+                            CommandHandler(
+                            'skip',
+                            anketa_skip_comment,
+                            pass_user_data=True
+                        )],
+                    },
+                    fallbacks=[
+                            MessageHandler(
+                            Filters.text |
+                            Filters.video |
+                            Filters.photo |
+                            Filters.document,
+                            dontknow,
+                            pass_user_data=True
+                        )]
+    )
     dp.add_handler(CommandHandler("start", greet_user, pass_user_data=True))
+    dp.add_handler(anketa)
     dp.add_handler(CommandHandler(
                                 "cat",
                                 send_cat_picture,

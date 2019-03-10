@@ -364,3 +364,90 @@ KeyError: 'photo_file'
 2019-03-10 22:31:11,708 - INFO - Received signal 2 (SIGINT), stopping...
 2019-03-10 22:31:19,459 - INFO - Бот запускается
 2019-03-10 22:43:37,613 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-11 02:00:17,640 - INFO - Бот запускается
+2019-03-11 02:00:43,692 - INFO - Бот запускается
+2019-03-11 02:00:50,743 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 24, in talk_to_me
+    logging.info(
+NameError: name 'logging' is not defined
+2019-03-11 02:00:57,334 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 24, in talk_to_me
+    logging.info(
+NameError: name 'logging' is not defined
+2019-03-11 02:01:33,574 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-11 02:01:38,438 - INFO - Бот запускается
+2019-03-11 02:01:52,596 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/conversationhandler.py", line 305, in handle_update
+    new_state = self.current_handler.handle_update(update, dispatcher)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 90, in anketa_get_name
+    reply_markup=ReplyKeyboardMarkup(
+NameError: name 'ReplyKeyboardMarkup' is not defined
+2019-03-11 02:02:12,578 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/conversationhandler.py", line 305, in handle_update
+    new_state = self.current_handler.handle_update(update, dispatcher)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 90, in anketa_get_name
+    reply_markup=ReplyKeyboardMarkup(
+NameError: name 'ReplyKeyboardMarkup' is not defined
+2019-03-11 02:03:31,147 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/conversationhandler.py", line 305, in handle_update
+    new_state = self.current_handler.handle_update(update, dispatcher)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 90, in anketa_get_name
+    reply_markup=ReplyKeyboardMarkup(
+NameError: name 'ReplyKeyboardMarkup' is not defined
+2019-03-11 02:03:37,832 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/conversationhandler.py", line 305, in handle_update
+    new_state = self.current_handler.handle_update(update, dispatcher)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 90, in anketa_get_name
+    reply_markup=ReplyKeyboardMarkup(
+NameError: name 'ReplyKeyboardMarkup' is not defined
+2019-03-11 02:04:38,755 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-11 02:04:52,258 - INFO - Бот запускается
+2019-03-11 02:05:25,050 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/conversationhandler.py", line 305, in handle_update
+    new_state = self.current_handler.handle_update(update, dispatcher)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 118, in anketa_comment
+    return ConversationHandler.END
+NameError: name 'ConversationHandler' is not defined
+2019-03-11 02:06:36,581 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-11 02:06:41,438 - INFO - Бот запускается
+2019-03-11 02:08:22,111 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-11 02:08:26,061 - INFO - Бот запускается
+2019-03-11 02:12:29,724 - INFO - Бот запускается
+2019-03-11 02:21:58,315 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-11 02:22:03,911 - INFO - Бот запускается
+2019-03-11 02:22:53,002 - INFO - Received signal 2 (SIGINT), stopping...
