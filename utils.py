@@ -1,7 +1,9 @@
 import settings
+import pprint
 from telegram import ReplyKeyboardMarkup, KeyboardButton
 from random import choice
 from emoji import emojize
+from clarifai.rest import ClarifaiApp
 
 
 def get_user_emo(user_data):
@@ -24,3 +26,20 @@ def get_keyboard():
     ], resize_keyboard=True)
 
     return my_keyboard
+
+
+def is_cat(file_name):
+    app = ClarifaiApp(api_key="df3dcf007e6a4d4e9f1c94e9bf44b5af")
+    model = app.public_models.general_model
+    response = model.predict_by_filename(file_name, max_concepts=5)
+    image_has_cat = False
+    if response['status']['code'] == 10000:
+        for concept in response['outputs'][0]['data']['concepts']:
+            if concept['name'] == 'cat':
+                image_has_cat = True
+    return image_has_cat
+
+
+if __name__ == '__main__':
+    print(is_cat('images/cat1.jpg'))
+    print(is_cat('images/not_cat1.jpg'))

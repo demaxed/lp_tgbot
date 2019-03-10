@@ -255,3 +255,112 @@ Message: jj
 2019-03-08 01:57:40,087 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7fc979fc1358>, 'Connection to api.telegram.org timed out. (connect timeout=5.0)')': /bot758718329:AAHVI_T8WxTGuj46TsFfK9d0TlQor-HsYiA/getUpdates
 2019-03-08 01:57:47,819 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'ConnectTimeoutError(<telegram.vendor.ptb_urllib3.urllib3.contrib.socks.SOCKSHTTPSConnectionPool object at 0x7fc97c21da20>, 'Connect timed out. (connect timeout=5.0)')': /bot758718329:AAHVI_T8WxTGuj46TsFfK9d0TlQor-HsYiA/getUpdates
 2019-03-08 01:58:03,195 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-10 21:57:06,080 - INFO - Бот запускается
+2019-03-10 21:57:46,399 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 62, in check_user_photo
+    if is_cat(filename):
+NameError: name 'is_cat' is not defined
+2019-03-10 21:58:25,300 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-10 21:58:32,428 - INFO - Бот запускается
+2019-03-10 21:58:49,755 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 62, in check_user_photo
+    if is_cat(filename):
+  File "/home/final/projects/lp_tgbot/utils.py", line 39, in is_cat
+    return image_has_cat
+UnboundLocalError: local variable 'image_has_cat' referenced before assignment
+2019-03-10 21:59:48,207 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 62, in check_user_photo
+    update.message.reply_text("Обнаружен котик, добавляю в библиотеку.")
+  File "/home/final/projects/lp_tgbot/utils.py", line 39, in is_cat
+    return image_has_cat
+UnboundLocalError: local variable 'image_has_cat' referenced before assignment
+2019-03-10 21:59:51,551 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-10 21:59:59,335 - INFO - Бот запускается
+2019-03-10 22:00:17,860 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 61, in check_user_photo
+    if is_cat(filename):
+  File "/home/final/projects/lp_tgbot/utils.py", line 39, in is_cat
+    return image_has_cat
+UnboundLocalError: local variable 'image_has_cat' referenced before assignment
+2019-03-10 22:00:44,992 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 61, in check_user_photo
+    if is_cat(filename):
+  File "/home/final/projects/lp_tgbot/utils.py", line 39, in is_cat
+    return image_has_cat
+UnboundLocalError: local variable 'image_has_cat' referenced before assignment
+2019-03-10 22:01:47,972 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-10 22:01:54,151 - INFO - Бот запускается
+2019-03-10 22:02:17,510 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 61, in check_user_photo
+    if is_cat(filename):
+  File "/home/final/projects/lp_tgbot/utils.py", line 39, in is_cat
+    return image_has_cat
+UnboundLocalError: local variable 'image_has_cat' referenced before assignment
+2019-03-10 22:04:06,502 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-10 22:04:11,654 - INFO - Бот запускается
+2019-03-10 22:04:29,957 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 61, in check_user_photo
+    if is_cat(filename):
+  File "/home/final/projects/lp_tgbot/utils.py", line 39, in is_cat
+    return image_has_cat
+UnboundLocalError: local variable 'image_has_cat' referenced before assignment
+2019-03-10 22:06:35,612 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-10 22:06:43,363 - INFO - Бот запускается
+2019-03-10 22:12:20,579 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 63, in check_user_photo
+    new_filename = os.path.join('images', 'cat_{photo_file.file_id}.jpg'.format(photo_file.file_id))
+KeyError: 'photo_file'
+2019-03-10 22:14:23,198 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-10 22:29:40,834 - INFO - Бот запускается
+2019-03-10 22:30:57,124 - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/dispatcher.py", line 279, in process_update
+    handler.handle_update(update, self)
+  File "/home/final/projects/lp_tgbot/env/lib/python3.6/site-packages/telegram/ext/messagehandler.py", line 169, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/final/projects/lp_tgbot/handlers.py", line 63, in check_user_photo
+    new_filename = os.path.join('images', 'cat_{photo_file.file_id}.jpg'.format(photo_file.file_id))
+KeyError: 'photo_file'
+2019-03-10 22:31:11,708 - INFO - Received signal 2 (SIGINT), stopping...
+2019-03-10 22:31:19,459 - INFO - Бот запускается
+2019-03-10 22:43:37,613 - INFO - Received signal 2 (SIGINT), stopping...

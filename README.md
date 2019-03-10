@@ -7,4 +7,4 @@ Installing
 ----------
 pip install -r requirements.txt
 
-***and some cats
+*** and some cats

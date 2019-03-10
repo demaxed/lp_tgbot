@@ -4,7 +4,7 @@ from telegram.ext import Updater, CommandHandler, \
                     MessageHandler, Filters, RegexHandler
 
 from handlers import greet_user, talk_to_me, send_cat_picture, get_contact, \
-                    get_location
+                    get_location, check_user_photo
 
 
 logging.basicConfig(
@@ -42,6 +42,11 @@ def main():
     dp.add_handler(MessageHandler(
                                 Filters.location,
                                 get_location,
+                                pass_user_data=True
+    ))
+    dp.add_handler(MessageHandler(
+                                Filters.photo,
+                                check_user_photo,
                                 pass_user_data=True
     ))
 
